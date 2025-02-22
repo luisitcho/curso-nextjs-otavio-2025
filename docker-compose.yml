@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  blog_strap_api:
+    container_name: blog_strap_api
+    hostname: blog_strap_api
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: senha
+      POSTGRES_DB: blog-strapi
+    volumes:
+      - /home/luisitcho/Treino/nextJS-Otavio/curso-python-nextjs-2025/PostgresData/postgresonly/blog_strap_api:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
