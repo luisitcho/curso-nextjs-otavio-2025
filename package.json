@@ -1,4 +1,11 @@
 {
+  "scripts": {
+    "build": "strapi build",
+    "deploy": "strapi deploy",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi"
+  },
   "dependencies": {
     "pg": "^8.13.3"
   }
